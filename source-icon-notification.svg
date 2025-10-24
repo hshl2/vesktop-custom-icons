@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 0 1024 1024"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="discord.svg"
+   inkscape:export-filename="discord.png"
+   inkscape:export-xdpi="129.60001"
+   inkscape:export-ydpi="129.60001"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.23125"
+     inkscape:cx="400.40609"
+     inkscape:cy="400.40609"
+     inkscape:window-width="1917"
+     inkscape:window-height="1398"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <circle
+     cx="512"
+     cy="512"
+     r="512"
+     style="fill:#5865f2"
+     id="circle1" />
+  <path
+     d="m 778.15253,267.60389 a 633.315,633.315 0 0 0 -156.33,-48.48 2.37,2.37 0 0 0 -2.52,1.185 441.165,441.165 0 0 0 -19.5,39.99 584.67,584.67 0 0 0 -175.575,0 404.625,404.625 0 0 0 -19.77,-39.99 2.46,2.46 0 0 0 -2.52,-1.185 631.5,631.5 0 0 0 -156.27,48.48 2.235,2.235 0 0 0 -1.035,0.885 c -99.555,148.755 -126.825,293.85 -113.445,437.115 a 2.64,2.64 0 0 0 1.005,1.8 636.87,636.87 0 0 0 191.775,96.945 2.49,2.49 0 0 0 2.7,-0.885 455.175,455.175 0 0 0 39.225,-63.81 2.43,2.43 0 0 0 -1.335,-3.375 419.4,419.4 0 0 1 -59.91,-28.5 2.46,2.46 0 0 1 -0.24,-4.08 c 4.02,-3 8.055,-6.15 11.895,-9.33 a 2.37,2.37 0 0 1 2.475,-0.33 c 125.685,57.39 261.765,57.39 385.965,0 a 2.37,2.37 0 0 1 2.52,0.3 c 3.84,3.165 7.875,6.345 12,9.36 a 2.46,2.46 0 0 1 -0.21,4.08 393.555,393.555 0 0 1 -60,28.5 2.445,2.445 0 0 0 -1.305,3.42 511.08,511.08 0 0 0 39.195,63.78 2.43,2.43 0 0 0 2.7,0.915 634.755,634.755 0 0 0 192,-96.945 2.46,2.46 0 0 0 1.005,-1.77 c 16.02,-165.66 -26.82,-309.57 -113.55,-437.13 a 1.95,1.95 0 0 0 -0.945,-0.945 z m -393.51,350.775 c -37.845,0 -69,-34.74 -69,-77.4 0,-42.66 30.57,-77.4 69,-77.4 38.745,0 69.63,35.04 69,77.4 0.03,42.66 -30.555,77.4 -69,77.4 z m 255.195,0 c -37.845,0 -69,-34.74 -69,-77.4 0,-42.66 30.57,-77.4 69,-77.4 38.745,0 69.63,35.04 69,77.4 0.015,42.66 -30.255,77.4 -69,77.4 z"
+     style="fill:#e0e3ff;stroke:none;fill-opacity:1"
+     id="path1" />
+  <circle
+     cx="870"
+     cy="150"
+     r="150"
+     style="fill:#ff0000"
+     id="notification-dot" />
+</svg>

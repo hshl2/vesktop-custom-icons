@@ -2,7 +2,7 @@
 
 _pkgname=vesktop
 pkgname=vesktop-custom-icons-git
-pkgdesc="A standalone Electron-based Discord app with Vencord & improved Linux support built with original discord icons"
+pkgdesc="A vesktop-git clone that builds with original discord icons"
 pkgver=1.6.0.r9.ga242d5d
 pkgrel=1
 
@@ -28,17 +28,12 @@ source=(
   "vesktop.sh"
   "resize.sh"
   "colors.conf"
-  "https://raw.githubusercontent.com/username/repository/branch/path/to/loader.gif"
-  "https://raw.githubusercontent.com/username/repository/branch/path/to/source-icon.svg"
+  "https://raw.githubusercontent.com/hshl2/vesktop-custom-icons/main/loader.gif"
+  "https://raw.githubusercontent.com/hshl2/vesktop-custom-icons/main/source-icon.svg"
+  "https://raw.githubusercontent.com/hshl2/vesktop-custom-icons/main/source-icon-notification.svg"
 )
 
-sha256sums=('SKIP'
-            '455c00b862aa0a7e18ca8e23d65d5c5ee4506cdfb15f1bf6f622cce39827de46'
-            '506c246328af639d6f6a3e52215c7b34af2a6df11d195de6f57a8bbee750cce9'
-            '10140556459d948a68a6cd4c09711774c674ba2c4c9e9342fe90389804e26aba'
-            '83f357f337836a9f99d915fb8607a28d131be5af9310000def13655d83784427'
-            'eafb4260de50e0708f992b3452244d4285374167c142909bed534da556164b7a'
-            '5aaabbf078189547b0d19f2de1a117513dd090681b85b98dcca24ce624647c8c')
+sha256sums=('SKIP' '455c00b862aa0a7e18ca8e23d65d5c5ee4506cdfb15f1bf6f622cce39827de46' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP')
 
 pkgver() {
   cd "$_pkgname"
@@ -56,13 +51,17 @@ prepare() {
     cd "$_pkgname"
 
     BUILD_STATIC_DIR="build/static"
+    STATIC_TRAY_DIR="static/tray"
     mkdir -p "$BUILD_STATIC_DIR"
+    mkdir -p "$STATIC_TRAY_DIR"
 
     cp -v "$srcdir/pack/static/vesktop.png" "$srcdir/$_pkgname/static/icon.png"
     cp -v "$srcdir/pack/static/icon.ico" "$srcdir/$_pkgname/static/icon.ico"
     cp -v "$srcdir/pack/static/shiggy.gif" "$srcdir/$_pkgname/static/shiggy.gif"
+    cp -v "$srcdir/pack/static/tray/tray.png" "$srcdir/$_pkgname/$STATIC_TRAY_DIR/tray.png"
+    cp -v "$srcdir/pack/static/tray/trayUnread.png" "$srcdir/$_pkgname/$STATIC_TRAY_DIR/trayUnread.png"
 
-    echo "Icons injected into build/static/"
+    echo "Icons injected into build/static/ and static/tray/"
 }
 
 build() {
@@ -94,4 +93,3 @@ package() {
 
     install -Dm755 "../vesktop.sh" "$pkgdir/usr/bin/$_pkgname"
 }
-
